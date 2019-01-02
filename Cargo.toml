@@ -1,0 +1,16 @@
+[package]
+name = "clicky"
+description = "Simple interface to react to 'clicks' of single button bluetooth devices."
+version = "0.1.0"
+authors = ["plafü"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/plafue/clicky"
+
+[dependencies]
+evdev = "0.10.1"
+log = "0.4.0"
+rayon = "1.0.3"
+
+[replace]
+"evdev:0.10.1" = { git = 'https://github.com/plafue/evdev' }
